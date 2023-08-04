@@ -1,0 +1,107 @@
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@200&family=Oswald:wght@400;&display=swap');
+</style>
+* {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Oswald', sans-serif;
+    padding-bottom: 25px;
+}
+p {
+    font-family: 'Open Sans', sans-serif;
+    color: #fff;
+}
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+a {
+    text-decoration: none;
+    color: #000;
+}
+:root {
+    --color_1: #0771b9;
+    --color_2:#5bc5f3;
+    --color_3:#fcdb00;
+    --font_1: "Owsald" , sans-serif;
+}
+.nav_body {
+    background: var(--color_3);
+    max-height: 2240px;
+    padding-bottom: 30px;
+    display: block;
+}
+.icon {
+    padding-top: 30px;
+}
+.ipad {
+    width: 315px;
+    height: 470px;
+    padding-top: 50px;
+    
+    /* padding-bottom 30px;
+    position: absolute;
+    align-items: end;
+    justify-content: end;
+    display: flex; */
+}
+.slider {
+    padding-left: 46%;
+}
+
+/* hero part start */
+.hero_part {
+    background: url() no-repeat center;
+    background-size: cover;
+    padding: 0;
+    text-align: left;
+}
+.hero_con {
+    font-size: 20px;
+    font-weight: 200;
+    padding-left: 0%;
+    padding-top: 50px;
+}
+.feature {
+    padding-left:100px;
+    padding-bottom: 30px;
+}
+
+/* hero part end */
+/* about part start */
+.about_head {
+    text-align: center;
+    margin-top: 70px;
+    padding: 45px;
+}
+.about_head > h1 {
+    margin-bottom: 35px;
+}
+.footer {
+    background: #000;
+    max-height: 1000px;
+}
+.part_01 {
+    align-items: center;
+    padding: 50px;
+    padding-left: 280px;
+}
+.part_02 img {
+    padding-left: 520px;
+}
+
+.part_03 {
+    font-size: 14px;
+}
+
+.row {
+    padding-left: 60px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+/* about part end */
+
