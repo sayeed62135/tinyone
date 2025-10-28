@@ -51,6 +51,8 @@
             padding: 80px 0;
             background-color: var(--primary-color);
             color: #fff;
+            position: relative;
+            overflow: hidden;
         }
         
         .hero_con h1 {
@@ -72,25 +74,219 @@
             color: rgba(255,255,255,0.9);
         }
         
-        .ipad {
+        /* Device Preview Carousel Styles */
+        .device-showcase {
+            margin-top: 50px;
+            position: relative;
+        }
+        
+        .carousel-container {
+            position: relative;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        
+        .carousel-item {
+            padding: 20px;
+        }
+        
+        /* Mobile Device Mockup */
+        .mobile-mockup {
+            width: 280px;
+            height: 560px;
+            margin: 0 auto;
+            background: #000;
+            border-radius: 35px;
+            padding: 15px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+            position: relative;
+        }
+        
+        .mobile-screen {
+            width: 100%;
+            height: 100%;
+            background: #fff;
+            border-radius: 25px;
+            overflow: hidden;
+            position: relative;
+        }
+        
+        .mobile-notch {
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 150px;
+            height: 25px;
+            background: #000;
+            border-radius: 0 0 15px 15px;
+            z-index: 10;
+        }
+        
+        /* Tablet Device Mockup */
+        .tablet-mockup {
+            width: 500px;
+            height: 350px;
+            margin: 0 auto;
+            background: #000;
+            border-radius: 20px;
+            padding: 15px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+            position: relative;
+        }
+        
+        .tablet-screen {
+            width: 100%;
+            height: 100%;
+            background: #fff;
+            border-radius: 15px;
+            overflow: hidden;
+            position: relative;
+        }
+        
+        /* Laptop Device Mockup */
+        .laptop-mockup {
+            width: 650px;
+            height: 400px;
+            margin: 0 auto;
+            background: #000;
+            border-radius: 10px 10px 0 0;
+            padding: 15px 15px 0 15px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+            position: relative;
+        }
+        
+        .laptop-screen {
+            width: 100%;
+            height: 100%;
+            background: #fff;
+            border-radius: 5px;
+            overflow: hidden;
+            position: relative;
+        }
+        
+        .laptop-base {
+            position: absolute;
+            bottom: -15px;
+            left: 0;
+            right: 0;
+            height: 15px;
+            background: #000;
+            border-radius: 0 0 10px 10px;
+        }
+        
+        /* App Interface Styles */
+        .app-interface {
+            width: 100%;
+            height: 100%;
+            background: #000;
             display: flex;
-            justify-content: center;
+            flex-direction: column;
             align-items: center;
+            justify-content: center;
+            padding: 20px;
         }
         
-        .ipad img {
-            max-width: 100%;
-            height: auto;
+        .app-logo {
+            width: 80px;
+            height: 80px;
+            background: var(--primary-color);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 20px;
+            position: relative;
         }
         
-        .slider {
-            margin-top: 2rem;
+        .app-logo::before {
+            content: "";
+            position: absolute;
+            width: 60px;
+            height: 60px;
+            background: transparent;
+            border: 3px solid #000;
+            border-radius: 50%;
+        }
+        
+        .app-logo::after {
+            content: "";
+            position: absolute;
+            width: 30px;
+            height: 30px;
+            background: transparent;
+            border: 3px solid #000;
+            border-radius: 50%;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        
+        .app-name {
+            color: var(--primary-color);
+            font-size: 24px;
+            font-weight: 700;
+            margin-bottom: 10px;
+        }
+        
+        .app-tagline {
+            color: rgba(255,255,255,0.7);
+            font-size: 14px;
             text-align: center;
         }
         
-        .slider img {
-            max-width: 100%;
-            height: auto;
+        .app-features {
+            margin-top: 30px;
+            text-align: center;
+        }
+        
+        .feature-item {
+            color: rgba(255,255,255,0.8);
+            font-size: 12px;
+            margin-bottom: 8px;
+        }
+        
+        /* Carousel Controls */
+        .carousel-control-prev,
+        .carousel-control-next {
+            width: 50px;
+            height: 50px;
+            background: rgba(255,255,255,0.2);
+            border-radius: 50%;
+            top: 50%;
+            transform: translateY(-50%);
+            opacity: 0.8;
+            transition: all 0.3s;
+        }
+        
+        .carousel-control-prev:hover,
+        .carousel-control-next:hover {
+            background: rgba(255,255,255,0.3);
+            opacity: 1;
+        }
+        
+        .carousel-control-prev {
+            left: -70px;
+        }
+        
+        .carousel-control-next {
+            right: -70px;
+        }
+        
+        .carousel-indicators {
+            bottom: -50px;
+        }
+        
+        .carousel-indicators [data-bs-target] {
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background-color: rgba(255,255,255,0.5);
+            margin: 0 5px;
+        }
+        
+        .carousel-indicators .active {
+            background-color: #fff;
         }
         
         .about_part {
@@ -367,6 +563,29 @@
             .footer-search, .footer-social {
                 margin-bottom: 30px;
             }
+            
+            .mobile-mockup {
+                width: 240px;
+                height: 480px;
+            }
+            
+            .tablet-mockup {
+                width: 400px;
+                height: 280px;
+            }
+            
+            .laptop-mockup {
+                width: 500px;
+                height: 320px;
+            }
+            
+            .carousel-control-prev {
+                left: 10px;
+            }
+            
+            .carousel-control-next {
+                right: 10px;
+            }
         }
     </style>
 </head>
@@ -425,13 +644,84 @@
                             </div>
                         </div>
                         <div class="col-lg-6">
-                            <div class="ipad">
-                                <img src="img/ipad.png" alt="Tinyone App on iPad">
+                            <!-- Device Preview Carousel -->
+                            <div class="device-showcase">
+                                <div id="deviceCarousel" class="carousel slide" data-bs-ride="carousel">
+                                    <div class="carousel-indicators">
+                                        <button type="button" data-bs-target="#deviceCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                        <button type="button" data-bs-target="#deviceCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                        <button type="button" data-bs-target="#deviceCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                    </div>
+                                    <div class="carousel-inner">
+                                        <!-- Mobile Preview -->
+                                        <div class="carousel-item active">
+                                            <div class="mobile-mockup">
+                                                <div class="mobile-screen">
+                                                    <div class="mobile-notch"></div>
+                                                    <div class="app-interface">
+                                                        <div class="app-logo"></div>
+                                                        <div class="app-name">tinyone</div>
+                                                        <div class="app-tagline">Inspire your inspiration</div>
+                                                        <div class="app-features">
+                                                            <div class="feature-item">✓ Fully Responsive</div>
+                                                            <div class="feature-item">✓ Beautiful Design</div>
+                                                            <div class="feature-item">✓ Easy to Use</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
+                                        <!-- Tablet Preview -->
+                                        <div class="carousel-item">
+                                            <div class="tablet-mockup">
+                                                <div class="tablet-screen">
+                                                    <div class="app-interface">
+                                                        <div class="app-logo"></div>
+                                                        <div class="app-name">tinyone</div>
+                                                        <div class="app-tagline">Simple to use for your app, products showcase and your inspiration</div>
+                                                        <div class="app-features">
+                                                            <div class="feature-item">✓ Fully Responsive Design</div>
+                                                            <div class="feature-item">✓ Fully Layered PSD</div>
+                                                            <div class="feature-item">✓ Font Awesome Icons</div>
+                                                            <div class="feature-item">✓ HTML5 & CSS3</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
+                                        <!-- Laptop Preview -->
+                                        <div class="carousel-item">
+                                            <div class="laptop-mockup">
+                                                <div class="laptop-screen">
+                                                    <div class="app-interface">
+                                                        <div class="app-logo"></div>
+                                                        <div class="app-name">tinyone</div>
+                                                        <div class="app-tagline">The perfect platform for showcasing your digital creations</div>
+                                                        <div class="app-features">
+                                                            <div class="feature-item">✓ Email Template Included</div>
+                                                            <div class="feature-item">✓ Free to Download</div>
+                                                            <div class="feature-item">✓ 24/7 Support</div>
+                                                            <div class="feature-item">✓ Regular Updates</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="laptop-base"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button class="carousel-control-prev" type="button" data-bs-target="#deviceCarousel" data-bs-slide="prev">
+                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Previous</span>
+                                    </button>
+                                    <button class="carousel-control-next" type="button" data-bs-target="#deviceCarousel" data-bs-slide="next">
+                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Next</span>
+                                    </button>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="slider">
-                        <img src="img/slider.png" alt="App Screenshots">
                     </div>
                 </div>
             </div>
@@ -634,6 +924,12 @@
                 alert('Thank you for subscribing with email: ' + email);
                 this.reset();
             }
+        });
+        
+        // Auto-rotate carousel
+        const carousel = new bootstrap.Carousel(document.getElementById('deviceCarousel'), {
+            interval: 4000,
+            wrap: true
         });
     </script>
 </body>
