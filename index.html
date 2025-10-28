@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Tinyone - Inspire your inspiration. Simple to use for your app, products showcase and your inspiration.">
+    <meta name="keywords" content="app, product showcase, inspiration, tinyone">
+    <meta name="author" content="Tinyone">
+    <title>Tinyone - Inspire Your Inspiration</title>
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Bengali:wght@500&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    
+    <style>
+        :root {
+            --primary-color: #4a89dc;
+            --secondary-color: #f5f7fa;
+            --text-color: #333;
+            --light-text: #6c757d;
+        }
+        
+        body {
+            font-family: 'Poppins', sans-serif;
+            color: var(--text-color);
+        }
+        
+        .navbar {
+            padding: 1rem 0;
+            background-color: #fff;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        
+        .navbar-brand img {
+            max-height: 40px;
+        }
+        
+        .hero_part {
+            padding: 80px 0;
+            background-color: var(--secondary-color);
+        }
+        
+        .hero_con h1 {
+            font-weight: 700;
+            margin-bottom: 1.5rem;
+            color: var(--primary-color);
+        }
+        
+        .hero_con h4 {
+            font-weight: 500;
+            margin-bottom: 1.5rem;
+            color: var(--text-color);
+        }
+        
+        .hero_con h6 {
+            font-weight: 400;
+            line-height: 1.6;
+            margin-bottom: 2rem;
+            color: var(--light-text);
+        }
+        
+        .ipad {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .ipad img {
+            max-width: 100%;
+            height: auto;
+        }
+        
+        .slider {
+            margin-top: 2rem;
+            text-align: center;
+        }
+        
+        .slider img {
+            max-width: 100%;
+            height: auto;
+        }
+        
+        .about_part {
+            padding: 80px 0;
+        }
+        
+        .about_head {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+        
+        .about_head h1 {
+            font-weight: 700;
+            margin-bottom: 1rem;
+        }
+        
+        .about_head h4 {
+            font-weight: 400;
+            color: var(--light-text);
+            max-width: 700px;
+            margin: 0 auto;
+        }
+        
+        .feature {
+            text-align: center;
+        }
+        
+        .feature img {
+            max-width: 100%;
+            height: auto;
+        }
+        
+        .footer {
+            background-color: #2c3e50;
+            color: #ecf0f1;
+            padding: 60px 0 20px;
+        }
+        
+        .part_01, .part_02 {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        
+        .part_01 img, .part_02 img {
+            max-height: 40px;
+            margin: 0 10px;
+            opacity: 0.8;
+            transition: opacity 0.3s;
+        }
+        
+        .part_01 img:hover, .part_02 img:hover {
+            opacity: 1;
+        }
+        
+        .part_03 p {
+            margin-bottom: 10px;
+            font-size: 14px;
+        }
+        
+        .part_03 .row > div {
+            margin-bottom: 30px;
+        }
+        
+        .btn-primary {
+            background-color: var(--primary-color);
+            border-color: var(--primary-color);
+            padding: 10px 25px;
+            font-weight: 500;
+            border-radius: 30px;
+            transition: all 0.3s;
+        }
+        
+        .btn-primary:hover {
+            background-color: #3a7bc8;
+            border-color: #3a7bc8;
+            transform: translateY(-2px);
+        }
+        
+        @media (max-width: 768px) {
+            .hero_part {
+                padding: 40px 0;
+            }
+            
+            .hero_con {
+                text-align: center;
+                margin-bottom: 30px;
+            }
+            
+            .about_part {
+                padding: 40px 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                    <img src="img/header.png" alt="Tinyone Logo">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#home">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#features">Features</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#about">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact">Contact</a>
+                        </li>
+                        <li class="nav-item ms-2">
+                            <button class="btn btn-primary">Get Started</button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="hero_part">
+            <div class="container">
+                <div class="hero_con_main">
+                    <div class="row align-items-center">
+                        <div class="col-lg-6">
+                            <div class="hero_con">
+                                <h1>Inspire your inspiration</h1>
+                                <h4>Simple to use for your app, products showcase and your inspiration</h4>
+                                <h6>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vitae eros eget tellus tristique bibendum. Donec rutrum sed sem quis venenatis. Proin viverra risus a eros volutpat tempor. In quis arcu et eros porta lobortis sit</h6>
+                                <div class="d-flex gap-3 mb-4">
+                                    <button class="btn btn-primary">Download Now</button>
+                                    <button class="btn btn-outline-primary">Learn More</button>
+                                </div>
+                                <div class="icon">
+                                    <img src="img/icon.png" alt="App Store and Google Play Store badges">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="ipad">
+                                <img src="img/ipad.png" alt="Tinyone App on iPad">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slider">
+                        <img src="img/slider.png" alt="App Screenshots">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Features Section -->
+        <section id="features" class="port_part about_part">
+            <div class="container">
+                <div class="d-flex justify-content-center">
+                    <div class="about_head">
+                        <h1>Tinyone Features</h1>
+                        <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vitae eros eget tellus tristique bibendum. Donec rutrum sed sem quis venenatis.</h4>
+                    </div>
+                </div>
+                <div class="feature">
+                    <img src="img/feature.png" alt="Tinyone Features">
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer id="contact">
+        <div class="footer">
+            <div class="part_01">
+                <img src="img/search.png" alt="Search">
+            </div>
+            <div class="part_02">
+                <img src="img/social icon.png" alt="Social Media Icons">
+            </div>
+            <div class="part_03">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <p>HALOVIETNAM LTD<br>
+                            66, Dang Van ngu, Dong Da<br>
+                            Hanoi, Vietnam<br>
+                            contact@halovietnam.com<br>
+                            +844 35149182</p>
+                        </div>
+                        <div class="col-md-2">
+                            <p>Examples<br>
+                            Shop<br>
+                            License</p>
+                        </div>
+                        <div class="col-md-2">
+                            <p>Contact<br>
+                            About<br>
+                            Privacy<br>
+                            Term</p>
+                        </div>
+                        <div class="col-md-2">
+                            <p>Download<br>
+                            Support<br>
+                            Documents</p>
+                        </div>
+                        <div class="col-md-2">
+                            <p>Media<br>
+                            Blog<br>
+                            Forums</p>
+                        </div>
+                    </div>
+                    <div class="row mt-4">
+                        <div class="col-12 text-center">
+                            <p class="mb-0">&copy; 2023 Tinyone. All rights reserved.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Custom JS -->
+    <script>
+        // Add smooth scrolling to all links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+        
+        // Add active class to navigation based on scroll position
+        window.addEventListener('scroll', function() {
+            const sections = document.querySelectorAll('section');
+            const navLinks = document.querySelectorAll('.navbar-nav .nav-link');
+            
+            let current = '';
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                const sectionHeight = section.clientHeight;
+                if (pageYOffset >= sectionTop - 100) {
+                    current = section.getAttribute('id');
+                }
+            });
+            
+            navLinks.forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href').substring(1) === current) {
+                    link.classList.add('active');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
