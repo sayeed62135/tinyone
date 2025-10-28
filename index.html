@@ -76,13 +76,13 @@
         
         /* Device Preview Carousel Styles */
         .device-showcase {
-            margin-top: 50px;
+            margin-top: 30px;
             position: relative;
         }
         
         .carousel-container {
             position: relative;
-            max-width: 800px;
+            max-width: 600px;
             margin: 0 auto;
         }
         
@@ -90,25 +90,28 @@
             padding: 20px;
         }
         
-        /* Mobile Device Mockup */
+        /* Mobile Device Mockup - Smaller Size */
         .mobile-mockup {
-            width: 280px;
-            height: 560px;
+            width: 200px;
+            height: 400px;
             margin: 0 auto;
             background: #000;
-            border-radius: 35px;
-            padding: 15px;
-            box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+            border-radius: 25px;
+            padding: 10px;
+            box-shadow: 0 15px 30px rgba(0,0,0,0.3);
             position: relative;
         }
         
         .mobile-screen {
             width: 100%;
             height: 100%;
-            background: #fff;
-            border-radius: 25px;
+            background: #000;
+            border-radius: 18px;
             overflow: hidden;
             position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
         }
         
         .mobile-notch {
@@ -116,106 +119,100 @@
             top: 0;
             left: 50%;
             transform: translateX(-50%);
-            width: 150px;
-            height: 25px;
+            width: 100px;
+            height: 18px;
             background: #000;
-            border-radius: 0 0 15px 15px;
+            border-radius: 0 0 10px 10px;
             z-index: 10;
         }
         
-        /* Tablet Device Mockup */
+        /* Tablet Device Mockup - Smaller Size */
         .tablet-mockup {
-            width: 500px;
-            height: 350px;
+            width: 350px;
+            height: 250px;
             margin: 0 auto;
             background: #000;
-            border-radius: 20px;
-            padding: 15px;
-            box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+            border-radius: 15px;
+            padding: 10px;
+            box-shadow: 0 15px 30px rgba(0,0,0,0.3);
             position: relative;
         }
         
         .tablet-screen {
             width: 100%;
             height: 100%;
-            background: #fff;
-            border-radius: 15px;
+            background: #000;
+            border-radius: 10px;
             overflow: hidden;
             position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
         }
         
-        /* Laptop Device Mockup */
+        /* Laptop Device Mockup - Smaller Size */
         .laptop-mockup {
-            width: 650px;
-            height: 400px;
+            width: 450px;
+            height: 280px;
             margin: 0 auto;
             background: #000;
-            border-radius: 10px 10px 0 0;
-            padding: 15px 15px 0 15px;
-            box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+            border-radius: 8px 8px 0 0;
+            padding: 10px 10px 0 10px;
+            box-shadow: 0 15px 30px rgba(0,0,0,0.3);
             position: relative;
         }
         
         .laptop-screen {
             width: 100%;
             height: 100%;
-            background: #fff;
-            border-radius: 5px;
+            background: #000;
+            border-radius: 4px;
             overflow: hidden;
             position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
         }
         
         .laptop-base {
             position: absolute;
-            bottom: -15px;
+            bottom: -10px;
             left: 0;
             right: 0;
-            height: 15px;
+            height: 10px;
             background: #000;
-            border-radius: 0 0 10px 10px;
+            border-radius: 0 0 8px 8px;
         }
         
-        /* App Interface Styles */
-        .app-interface {
-            width: 100%;
-            height: 100%;
-            background: #000;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            padding: 20px;
-        }
-        
+        /* App Logo Styles - Only Logo */
         .app-logo {
-            width: 80px;
-            height: 80px;
+            width: 60px;
+            height: 60px;
             background: var(--primary-color);
             border-radius: 50%;
             display: flex;
             align-items: center;
             justify-content: center;
-            margin-bottom: 20px;
             position: relative;
         }
         
         .app-logo::before {
             content: "";
             position: absolute;
-            width: 60px;
-            height: 60px;
+            width: 45px;
+            height: 45px;
             background: transparent;
-            border: 3px solid #000;
+            border: 2px solid #000;
             border-radius: 50%;
         }
         
         .app-logo::after {
             content: "";
             position: absolute;
-            width: 30px;
-            height: 30px;
+            width: 22px;
+            height: 22px;
             background: transparent;
-            border: 3px solid #000;
+            border: 2px solid #000;
             border-radius: 50%;
             top: 50%;
             left: 50%;
@@ -223,34 +220,19 @@
         }
         
         .app-name {
+            position: absolute;
+            bottom: 30px;
             color: var(--primary-color);
-            font-size: 24px;
+            font-size: 18px;
             font-weight: 700;
-            margin-bottom: 10px;
-        }
-        
-        .app-tagline {
-            color: rgba(255,255,255,0.7);
-            font-size: 14px;
-            text-align: center;
-        }
-        
-        .app-features {
-            margin-top: 30px;
-            text-align: center;
-        }
-        
-        .feature-item {
-            color: rgba(255,255,255,0.8);
-            font-size: 12px;
-            margin-bottom: 8px;
+            letter-spacing: 1px;
         }
         
         /* Carousel Controls */
         .carousel-control-prev,
         .carousel-control-next {
-            width: 50px;
-            height: 50px;
+            width: 40px;
+            height: 40px;
             background: rgba(255,255,255,0.2);
             border-radius: 50%;
             top: 50%;
@@ -266,23 +248,23 @@
         }
         
         .carousel-control-prev {
-            left: -70px;
+            left: -50px;
         }
         
         .carousel-control-next {
-            right: -70px;
+            right: -50px;
         }
         
         .carousel-indicators {
-            bottom: -50px;
+            bottom: -40px;
         }
         
         .carousel-indicators [data-bs-target] {
-            width: 12px;
-            height: 12px;
+            width: 10px;
+            height: 10px;
             border-radius: 50%;
             background-color: rgba(255,255,255,0.5);
-            margin: 0 5px;
+            margin: 0 4px;
         }
         
         .carousel-indicators .active {
@@ -564,19 +546,42 @@
                 margin-bottom: 30px;
             }
             
+            /* Even smaller devices for mobile */
             .mobile-mockup {
-                width: 240px;
-                height: 480px;
+                width: 160px;
+                height: 320px;
             }
             
             .tablet-mockup {
-                width: 400px;
-                height: 280px;
+                width: 280px;
+                height: 200px;
             }
             
             .laptop-mockup {
-                width: 500px;
-                height: 320px;
+                width: 360px;
+                height: 220px;
+            }
+            
+            .app-logo {
+                width: 45px;
+                height: 45px;
+            }
+            
+            .app-logo::before {
+                width: 35px;
+                height: 35px;
+                border-width: 1.5px;
+            }
+            
+            .app-logo::after {
+                width: 18px;
+                height: 18px;
+                border-width: 1.5px;
+            }
+            
+            .app-name {
+                font-size: 14px;
+                bottom: 20px;
             }
             
             .carousel-control-prev {
@@ -658,16 +663,8 @@
                                             <div class="mobile-mockup">
                                                 <div class="mobile-screen">
                                                     <div class="mobile-notch"></div>
-                                                    <div class="app-interface">
-                                                        <div class="app-logo"></div>
-                                                        <div class="app-name">tinyone</div>
-                                                        <div class="app-tagline">Inspire your inspiration</div>
-                                                        <div class="app-features">
-                                                            <div class="feature-item">✓ Fully Responsive</div>
-                                                            <div class="feature-item">✓ Beautiful Design</div>
-                                                            <div class="feature-item">✓ Easy to Use</div>
-                                                        </div>
-                                                    </div>
+                                                    <div class="app-logo"></div>
+                                                    <div class="app-name">tinyone</div>
                                                 </div>
                                             </div>
                                         </div>
@@ -676,17 +673,8 @@
                                         <div class="carousel-item">
                                             <div class="tablet-mockup">
                                                 <div class="tablet-screen">
-                                                    <div class="app-interface">
-                                                        <div class="app-logo"></div>
-                                                        <div class="app-name">tinyone</div>
-                                                        <div class="app-tagline">Simple to use for your app, products showcase and your inspiration</div>
-                                                        <div class="app-features">
-                                                            <div class="feature-item">✓ Fully Responsive Design</div>
-                                                            <div class="feature-item">✓ Fully Layered PSD</div>
-                                                            <div class="feature-item">✓ Font Awesome Icons</div>
-                                                            <div class="feature-item">✓ HTML5 & CSS3</div>
-                                                        </div>
-                                                    </div>
+                                                    <div class="app-logo"></div>
+                                                    <div class="app-name">tinyone</div>
                                                 </div>
                                             </div>
                                         </div>
@@ -695,17 +683,8 @@
                                         <div class="carousel-item">
                                             <div class="laptop-mockup">
                                                 <div class="laptop-screen">
-                                                    <div class="app-interface">
-                                                        <div class="app-logo"></div>
-                                                        <div class="app-name">tinyone</div>
-                                                        <div class="app-tagline">The perfect platform for showcasing your digital creations</div>
-                                                        <div class="app-features">
-                                                            <div class="feature-item">✓ Email Template Included</div>
-                                                            <div class="feature-item">✓ Free to Download</div>
-                                                            <div class="feature-item">✓ 24/7 Support</div>
-                                                            <div class="feature-item">✓ Regular Updates</div>
-                                                        </div>
-                                                    </div>
+                                                    <div class="app-logo"></div>
+                                                    <div class="app-name">tinyone</div>
                                                 </div>
                                                 <div class="laptop-base"></div>
                                             </div>
