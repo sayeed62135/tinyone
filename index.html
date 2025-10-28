@@ -228,6 +228,54 @@
             letter-spacing: 1px;
         }
         
+        /* App Store Badges Styles */
+        .app-badges {
+            display: flex;
+            gap: 15px;
+            margin-top: 20px;
+            flex-wrap: wrap;
+        }
+        
+        .badge {
+            display: inline-flex;
+            align-items: center;
+            padding: 8px 12px;
+            border-radius: 8px;
+            background-color: rgba(255,255,255,0.15);
+            color: #fff;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            font-size: 14px;
+            font-weight: 500;
+        }
+        
+        .badge:hover {
+            background-color: rgba(255,255,255,0.25);
+            transform: translateY(-3px);
+            color: #fff;
+        }
+        
+        .badge i {
+            margin-right: 8px;
+            font-size: 18px;
+        }
+        
+        .badge-text {
+            display: flex;
+            flex-direction: column;
+            line-height: 1.2;
+        }
+        
+        .badge-small {
+            font-size: 10px;
+            opacity: 0.8;
+        }
+        
+        .badge-large {
+            font-size: 14px;
+            font-weight: 600;
+        }
+        
         /* Carousel Controls */
         .carousel-control-prev,
         .carousel-control-next {
@@ -591,6 +639,28 @@
             .carousel-control-next {
                 right: 10px;
             }
+            
+            .app-badges {
+                justify-content: center;
+            }
+            
+            .badge {
+                font-size: 12px;
+                padding: 6px 10px;
+            }
+            
+            .badge i {
+                font-size: 16px;
+                margin-right: 6px;
+            }
+            
+            .badge-small {
+                font-size: 9px;
+            }
+            
+            .badge-large {
+                font-size: 12px;
+            }
         }
     </style>
 </head>
@@ -643,8 +713,30 @@
                                     <button class="btn btn-primary">Download Now</button>
                                     <button class="btn btn-outline-primary">Learn More</button>
                                 </div>
-                                <div class="icon">
-                                    <img src="img/icon.png" alt="App Store and Google Play Store badges">
+                                
+                                <!-- App Store Badges - Replaced image with HTML -->
+                                <div class="app-badges">
+                                    <a href="#" class="badge">
+                                        <i class="fab fa-apple"></i>
+                                        <div class="badge-text">
+                                            <span class="badge-small">Download on the</span>
+                                            <span class="badge-large">App Store</span>
+                                        </div>
+                                    </a>
+                                    <a href="#" class="badge">
+                                        <i class="fab fa-google-play"></i>
+                                        <div class="badge-text">
+                                            <span class="badge-small">Get it on</span>
+                                            <span class="badge-large">Google Play</span>
+                                        </div>
+                                    </a>
+                                    <a href="#" class="badge">
+                                        <i class="fab fa-windows"></i>
+                                        <div class="badge-text">
+                                            <span class="badge-small">Download from</span>
+                                            <span class="badge-large">Windows Store</span>
+                                        </div>
+                                    </a>
                                 </div>
                             </div>
                         </div>
